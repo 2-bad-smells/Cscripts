@@ -1,0 +1,17 @@
+
+void gSleep(const char* a)//全角の文字アニメーション
+{
+	int len = strlen(a)/2;
+	char moji[3]="";
+	for (; 0< len; len--)
+	{
+		moji[0] = *a;//全角文字半分
+		a++;
+		moji[1] = *a;//全角文字半分
+		a++;
+		printf("%s",moji);
+		Sleep(50);
+		printf(" ");
+		Sleep(50);
+	}
+}
